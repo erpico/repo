@@ -1,0 +1,7 @@
+api-ms-win-eventing-provider-l1-1-0.dll	N/A
+acllibdbg.dll	1.2.1.2
+coredbg.dll	1.2.9.7
+erpicoctidbg.dll	1.2.1.2
+httplibdbg.dll	1.2.2.3
+libmysql.dll	5.1.41.0
+licensedbg.dll	1.1.2.2
