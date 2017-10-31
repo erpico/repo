@@ -1,4 +1,0 @@
-coredbg.dll	1.0.0.1
-erpicoctidbg.dll	1.0.0.1
-rscommondbg.dll	1.0.0.1
-libmysql.dll	N/A
