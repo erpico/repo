@@ -21,7 +21,7 @@ public:
     double      dCityLatitude;
     std::string strEntity;
     std::string strAccount;
-    std::string strLicence;
+    std::string strLicense;
     std::string strOrgCard;
     std::string strCompanyCharter;
     std::string strPhone;
@@ -47,7 +47,7 @@ public:
       dCityLatitude     = 0.0;
       strEntity         = "";
       strAccount        = "";
-      strLicence        = "";
+      strLicense        = "";
       strOrgCard        = "";
       strCompanyCharter = "";
       strPhone          = "";
@@ -69,7 +69,7 @@ public:
       dCityLatitude     = another.dCityLatitude;
       strEntity         = another.strEntity;
       strAccount        = another.strAccount;
-      strLicence        = another.strLicence;
+      strLicense        = another.strLicense;
       strOrgCard        = another.strOrgCard;
       strCompanyCharter = another.strCompanyCharter;
       strPhone          = another.strPhone;
