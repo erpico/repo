@@ -33,7 +33,7 @@ api-ms-win-crt-time-l1-1-0.dll	10.0.14393.795
 api-ms-win-crt-utility-l1-1-0.dll	10.0.14393.795
 acllibdbg.dll	1.2.1.2
 coredbg.dll	1.2.30.26
-crmcoredbg.dll	1.2.40.57
+crmcoredbg.dll	1.2.41.58
 erpicoctidbg.dll	1.2.4.14
 guiexdbg.dll	1.0.0.1
 guilibdbg.dll	1.2.4.9
