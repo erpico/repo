@@ -31,7 +31,7 @@ api-ms-win-crt-runtime-l1-1-0.dll	10.0.14393.795
 api-ms-win-crt-string-l1-1-0.dll	10.0.14393.795
 api-ms-win-crt-time-l1-1-0.dll	10.0.14393.795
 api-ms-win-crt-utility-l1-1-0.dll	10.0.14393.795
-core.dll	1.2.29.25
+core.dll	1.2.30.26
 httplib.dll	1.2.4.9
 libmysql.dll	5.1.41.0
 license.dll	1.1.2.2
