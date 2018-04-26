@@ -1,0 +1,11 @@
+acllib.dll	1.2.2.25
+chrome_elf.dll	62.0.3202.94
+core.dll	1.2.42.54
+erpicocti.dll	1.2.6.39
+erpicopbx.dll	1.2.2.28
+erpicosip.dll	1.2.3.28
+guilib.dll	1.2.6.38
+httplib.dll	1.2.6.35
+libcef.dll	3.3202.1686.0
+libmysql.dll	5.1.41.0
+license.dll	1.1.2.2
