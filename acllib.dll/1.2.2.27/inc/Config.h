@@ -38,7 +38,7 @@ public:
 public:
   const std::map<CString, CString> &getOptionMap() const;
   void getStringOption(const char *optionName, CString &val) const;
-  int getIntOption(const char *optionName) const;
+  int getIntOption(const char *optionName, int nDefaultValue = 0) const;
   long getLongOption(const char *optionName) const;
   void getLongOptions(const char *optionName, std::list<long> &result);
   bool getBoolOption(const char *optionName) const;
