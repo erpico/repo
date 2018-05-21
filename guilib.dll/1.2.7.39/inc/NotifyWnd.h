@@ -7,7 +7,6 @@
 // CNotifyWnd
 
 #define DEFAULT_NOTIFY_WND_ID 0
-#define WM_CHANGE_TREE_CATEGORY WM_USER + 14
 
 class GUILIB_API CNotifyWnd : public CWnd
 {
@@ -20,7 +19,6 @@ public:
   int nGlowDirection;
   int m_nBlinkState;
   int m_nXOffset;
-  int m_nYOffset;
   HICON m_hIcon;
   HICON m_hWndIcon;
   CString m_strTitle;
@@ -45,9 +43,6 @@ private:
   DECLARE_DYNAMIC(CNotifyWnd)
   CNotifyWnd();
 
-  HWND   m_hChildView;
-  CString m_strOrderTypeName;
-
 public:
   CNotifyWnd(DWORD dwRefId);
   virtual ~CNotifyWnd();
@@ -55,8 +50,7 @@ public:
   virtual BOOL Create(CWnd* pWnd);
   virtual BOOL DestroyWindow();
 
-  BOOL MyShowWindow(int nCmdShow, int nYOffset = 0, int nXOffset = 0);
-  virtual LONG NtfWindowWidth()  const { return 250; } 
+  BOOL MyShowWindow(int nCmdShow, int nXOffset = 0);
   virtual LONG NtfWindowHeight() const { return 50; }
 
   void SetCallTitle(const CString& strTitle) { m_strTitle = strTitle; Invalidate(FALSE); SetWindowText(strTitle); }
@@ -65,8 +59,6 @@ public:
   void SetTitleColor(COLORREF titleColor) { m_titleColor = titleColor; Invalidate(); }
 
   int GetXOffset() const { return m_nXOffset; }
-  int GetYOffset() const { return m_nYOffset; }
-
   DWORD GetRefID() const { return m_dwRefID; }
   int IsActive() const { return m_bActive; }
 
@@ -79,9 +71,6 @@ public:
 
   void SaveWindowPosition();
   void RestoreWindowPosition();
-
-  void CNotifyWnd::SetChildViewHWnd(const HWND &_hWnd)            { m_hChildView       = _hWnd; }
-  void CNotifyWnd::SetOrderType(const CString &_strOrderTypeName) { m_strOrderTypeName = _strOrderTypeName; }
 
 protected:
   BOOL CreateTextMessageFont(CFont& font);
