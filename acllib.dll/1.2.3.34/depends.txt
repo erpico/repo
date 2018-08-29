@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 api-ms-win-crt-convert-l1-1-0.dll	10.0.14393.795
 api-ms-win-crt-environment-l1-1-0.dll	10.0.14393.795
 api-ms-win-crt-filesystem-l1-1-0.dll	10.0.14393.795
@@ -11,6 +12,8 @@ api-ms-win-crt-stdio-l1-1-0.dll	10.0.14393.795
 api-ms-win-crt-string-l1-1-0.dll	10.0.14393.795
 api-ms-win-crt-time-l1-1-0.dll	10.0.14393.795
 api-ms-win-crt-utility-l1-1-0.dll	10.0.14393.795
+=======
+>>>>>>> 89c176ae9dc5e0f157e44d4fb8e5c5415b64b90e
 core.dll	1.2.48.61
 httplib.dll	1.2.7.44
 libmysql.dll	5.1.41.0

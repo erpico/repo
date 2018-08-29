@@ -150,4 +150,8 @@ typedef enum eObjectTypes {
 };
 
 CORE_API BOOL GetCurrentUserAndDomain(PTSTR szUser, PDWORD pcchUser, PTSTR szDomain, PDWORD pcchDomain);
+<<<<<<< HEAD
 CORE_API BOOL GetFullUserNameFromDomain(PTSTR szUser, PTSTR szDomain, std::string & strFullName, std::string & strEmail, std::string & strPhone, std::string & strDescription, std::string & strHomePage, std::string & strGroup, std::string & strTitle);
+=======
+CORE_API BOOL GetFullUserNameFromDomain(PTSTR szUser, PTSTR szDomain, std::string & strFullName, std::string & strEmail, std::string & strPhone, std::string & strDescription, std::string & strHomePage, std::string & strGroup);
+>>>>>>> 89c176ae9dc5e0f157e44d4fb8e5c5415b64b90e

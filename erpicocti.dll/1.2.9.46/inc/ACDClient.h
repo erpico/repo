@@ -144,8 +144,11 @@ private:
   bool m_bCallHold;
 
   Config *m_pConfig;
+<<<<<<< HEAD
   const User* m_pUser;
 
+=======
+>>>>>>> 89c176ae9dc5e0f157e44d4fb8e5c5415b64b90e
   std::list<SWCTIAgentQueues> m_arrQueues;
 
   ACDClientAsyncExecutor *asyncExecutor;
@@ -185,7 +188,11 @@ public:
   int UpdateQueuePenalty(const char* strName, const char* strIfc, const char* strQueue, int nPenalty);
   int RemoveFromQueue(const char* strIfc, const char* strQueue);
 public:
+<<<<<<< HEAD
   void Initialize(Config *pConfig/* = NULL*/, const User *pUser/* = NULL*/);
+=======
+  void Initialize(Config *pConfig = NULL);
+>>>>>>> 89c176ae9dc5e0f157e44d4fb8e5c5415b64b90e
   void SetQueues(std::list<SWCTIAgentQueues> arrQueues);
 
 private:
@@ -231,10 +238,13 @@ public:
 
   bool MakeOutboundCall(const char* strDialNumber);
   bool MakeLocalCall(const char* strANum, const char* strDialNumber, CTI_UID* pCallId = 0);
+<<<<<<< HEAD
 
   // Statistics
   void LogWebPageClosed(CTI_UID uCallId);
 
+=======
+>>>>>>> 89c176ae9dc5e0f157e44d4fb8e5c5415b64b90e
 private:
   void SetWCTICallPhoneNumber(const char* strIn);
   

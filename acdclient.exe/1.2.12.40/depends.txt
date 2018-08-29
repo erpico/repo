@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 api-ms-win-crt-convert-l1-1-0.dll	10.0.14393.795
 api-ms-win-crt-environment-l1-1-0.dll	10.0.14393.795
 api-ms-win-crt-filesystem-l1-1-0.dll	10.0.14393.795
@@ -19,6 +20,16 @@ erpicopbx.dll	1.2.3.31
 erpicosip.dll	1.2.3.31
 guilib.dll	1.2.7.42
 httplib.dll	1.2.7.39
+=======
+acllib.dll	1.2.2.28
+chrome_elf.dll	62.0.3202.94
+core.dll	1.2.44.56
+erpicocti.dll	1.2.8.43
+erpicopbx.dll	1.2.3.31
+erpicosip.dll	1.2.3.31
+guilib.dll	1.2.8.42
+httplib.dll	1.2.7.38
+>>>>>>> 89c176ae9dc5e0f157e44d4fb8e5c5415b64b90e
 libcef.dll	3.3202.1686.0
 libmysql.dll	5.1.41.0
 license.dll	1.1.2.2

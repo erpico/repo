@@ -37,8 +37,11 @@
 #define CFG_CTI_AUTO_ANSWER "cti.autoanswer"
 #define CFG_CTI_TIME_FOR_HANGING_UP "cti.time.for.hangingup"
 #define CFG_CTI_SHOW_WELCOME_TIMEOUT "cti.show_welcome.timeout"
+<<<<<<< HEAD
 #define CFG_CTI_AUTOREADY_AFTERWORK "cti.autoready.afterwork.timeout"
 #define CFG_CTI_AUTOREADY_ADDITIONAL "cti.autoready.additional.timeout"
+=======
+>>>>>>> 89c176ae9dc5e0f157e44d4fb8e5c5415b64b90e
 
 #define ACD_CLIENT_BUF_SIZE 2048
 
