@@ -28,6 +28,13 @@ typedef unsigned long WCTI_ULONG;
 typedef unsigned short WCTI_BOOL;
 typedef char * WCTI_STR;
 
+namespace WCTI_CalleeType
+{
+  static const int const_iService = 0;
+  static const int const_iClient  = 1;
+  static const int const_iDriver  = 2;
+};
+
 // Уровни ошибок
 enum WCTIErrorLevel
 {

@@ -383,8 +383,8 @@ public:
     ALLOW_MULTIPLE_ORDERS_FROM_SAME_ADDRESS = 119,
     KLAVTO_PHOTO_HTTP_PATH              = 120,
     KLAVTO_PHOTO_SMB_PATH               = 121,
-    ONE_SIGNAL_AUTH                     = 122,
-    ONE_SIGNAL_ID                       = 123,
+    ONE_SIGNAL_AUTH_DRIVER_APP          = 122,
+    ONE_SIGNAL_ID_DRIVER_APP            = 123,
     NEWS_URL                            = 124,
     BTONE_SIGN                          = 125,
     BTONE_DRIVER_CONFIRMATION_URL       = 126,
@@ -401,7 +401,10 @@ public:
     WEB_MAIL_SEND                       = 137,
     PAYMENT_CONFIRM                     = 138,
     PAYMENT_CANCEL                      = 139,
-    WEB_API                             = 140
+    WEB_API                             = 140,
+    ONE_SIGNAL_AUTH_CLIENT_APP          = 141,
+    ONE_SIGNAL_ID_CLIENT_APP            = 142,
+    BUS4US_SIGN                         = 143
   };
 
   typedef struct {

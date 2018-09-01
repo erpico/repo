@@ -44,6 +44,7 @@ public:
   bool getBoolOption(const char *optionName) const;
   void setLongOptions(const char *optionName, const std::list<long> &optionList);
   std::string Config::getAllowedCitiesAsStr();
+  std::string Config::getCTIExt();
 
 public:
   int saveOptions(std::map<CString, CString> optionMap);
