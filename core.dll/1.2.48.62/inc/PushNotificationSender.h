@@ -5,11 +5,19 @@
 
 namespace SoundFileName
 {
-    const std::string strAnswer = "answer";
-    const std::string strNew    = "neworder";
-    const std::string strDenial = "denial";
-    const std::string strError  = "error";
-}
+    const std::string const_strAnswer = "answer";
+    const std::string const_strNew    = "neworder";
+    const std::string const_strDenial = "denial";
+    const std::string const_strError  = "error";
+};
+
+namespace PushType
+{
+    const int const_iDriverPush = 0;
+    const int const_iClientPush = 1;
+
+    const int const_iCount      = 2;
+};
 
 class CORE_API CPushNotificationSender
 {
@@ -17,6 +25,8 @@ public:
     CPushNotificationSender();
     virtual~ CPushNotificationSender();
 
+    void SetAppId(const std::string &_strOneSignalId);
+    void SetOneSignalAuth(const std::string &_strOneSignalAuth);
     void SetFilter(const std::string &_strField, const std::string &_strKey, const std::string &_strRelation, const std::string &_strValue);
     void SetData(const std::string &_strField, const std::string &_strData);
     void SetData(const std::string &_strField, const DWORD &_dwData);
@@ -30,6 +40,8 @@ public:
 private:
     std::string strURL;
     std::string strAndroidSound;
+    std::string strOneSignalAuth;
+
     Json::Value jNotification;    
     Json::Value jFilterList; 
     Json::Value jData;    

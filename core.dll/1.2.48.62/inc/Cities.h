@@ -39,6 +39,10 @@ public:
     std::string strPassword;
     DWORD       dwSendingLetterTime;
     DWORD       dwSendingNoDriverLetterTime;
+    int         iDetails;
+    std::string strDirector;
+    std::string strAccountant;
+    int         iBlocked;
 
     sCity()
     {
@@ -74,6 +78,10 @@ public:
       strPassword                 = "";
       dwSendingLetterTime         = 0;
       dwSendingNoDriverLetterTime = 0;
+      iDetails                    = 0;
+      strDirector                 = "";
+      strAccountant               = "";
+      iBlocked                    = 0;
     }
 
     sCity& operator = (const sCity &another)
@@ -105,6 +113,10 @@ public:
       strPassword                 = another.strPassword;
       dwSendingLetterTime         = another.dwSendingLetterTime;
       dwSendingNoDriverLetterTime = another.dwSendingNoDriverLetterTime;
+      iDetails                    = another.iDetails;
+      strDirector                 = another.strDirector;
+      strAccountant               = another.strAccountant;
+      iBlocked                    = another.iBlocked;
 
       return *this;
     }
@@ -132,6 +144,7 @@ public:
   static bool UpdateServiceCity(const sCity &_stCity);
   static bool DeleteServiceCity(const DWORD &_dwId);
   static bool RestoreServiceCity(const DWORD &_dwId);
+  static bool BlockService(const DWORD &_dwId, const DWORD &_iValue);
   static int SelectServiceCity(const DWORD &_dwId, sCity &_stCity, const int &_iDeleted = 0);
   static bool CheckServiceId(const std::string &_strServiceId, const DWORD &_dwId = 0);
 

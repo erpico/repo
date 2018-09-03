@@ -142,6 +142,11 @@ public:
     void CBus4UsServlet::SetServiceBill(Json::Value &root, Json::Value &result);
     /* Запрос звонка */
     void CBus4UsServlet::RequestCall(Json::Value &root, Json::Value &result);
+    /* Запрос маршрута водителя по заказу */
+    void GetDriverGPSLog(Json::Value &root, Json::Value &result);
+    /* Блокирование подрядчика */
+    void SetServiceBlocked(Json::Value &root, Json::Value &result);
+
 private:
     bool m_bInitialized;
     std::string strServerHost;
