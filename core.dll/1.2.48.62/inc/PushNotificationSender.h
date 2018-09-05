@@ -30,6 +30,7 @@ public:
     void SetFilter(const std::string &_strField, const std::string &_strKey, const std::string &_strRelation, const std::string &_strValue);
     void SetData(const std::string &_strField, const std::string &_strData);
     void SetData(const std::string &_strField, const DWORD &_dwData);
+    void SetData(const std::string &_strField, const int &_iData);
     /* _iDeviceType = 0 - android */
     void SetSound(const std::string &_strData, const int &_iDeviceType = 0);
     void SetURL(const std::string &_strURL);

@@ -32,6 +32,7 @@ public:
     UpdateNotComplete      = 8
   };
 
+
   ErrorType CheckForUpdate(LPCTSTR UpdateServerURL, std::map<CString, CString> &moduleVersions);	
   ErrorType Update(LPCTSTR UpdateServerURL, const std::map<CString, CString> &moduleVersions);
   void SetUpdateStatusFunc(void (*func)(void* statusControl, CString status, CString error),void* statusControl=NULL);
@@ -48,6 +49,8 @@ private:
   bool	IsDigits(CString text);
   CString GetExecutablePath();
   bool	Switch(CString executable, CString update, bool WaitForReboot);
+
+  void SetFilePermission(LPCTSTR filePath);
 public:
   static CString GetFileVersion(LPCTSTR file, CString* productName = 0);
 private:

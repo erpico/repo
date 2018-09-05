@@ -146,6 +146,8 @@ public:
     void GetDriverGPSLog(Json::Value &root, Json::Value &result);
     /* Блокирование подрядчика */
     void SetServiceBlocked(Json::Value &root, Json::Value &result);
+    /* Получение реквизитов перевозчика */
+    void GetServiceDetails(Json::Value &root, Json::Value &result);
 
 private:
     bool m_bInitialized;
