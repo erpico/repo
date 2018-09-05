@@ -8,6 +8,11 @@
 #include "Core/json/json.h"
 
 
+namespace ServiceDetails
+{
+  static const char* strDetails[] = { "corpName", "corpInn", "corpKpp", "corpAddress",  "corpBik", "corpBankname", "corpCoracc", "corpRacc" };
+}
+
 class CORE_API CCities {
 public:
   struct sCity
@@ -131,6 +136,22 @@ public:
   {
     std::string strKey;
     std::string strValue;
+
+    sFields()
+    {
+    
+    }
+
+    sFields(const std::string &_strKey, const std::string &_strValue)
+    {
+        strKey   = _strKey;
+        strValue = _strValue;
+    }
+
+    bool operator () (const sFields &_sFields) const
+    {
+        return ((_sFields.strKey.compare(strKey) == 0) ? true : false);
+    }    
   };
 
   static std::string GetName(DWORD dwId, int iSQLSearch = 0);
@@ -161,6 +182,8 @@ public:
   static int GetFieldsValues(DWORD dwId, std::list<sFields>& arr);
   static bool GetServiceCities(std::vector<std::string> &_vectServiceCities);
   static void SetServiceToJson(Json::Value &_jService, const sCity &_stCity);
+  static void SetDetailsToJSON(const CCities::sCity &_stCity, Json::Value &_jList);
+  static bool GetLegalFormStr(const DWORD &_dwId, std::string &_strLegalForm);
 };
 
 #endif
