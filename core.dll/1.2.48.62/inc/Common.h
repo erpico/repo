@@ -404,7 +404,9 @@ public:
     WEB_API                             = 140,
     ONE_SIGNAL_AUTH_CLIENT_APP          = 141,
     ONE_SIGNAL_ID_CLIENT_APP            = 142,
-    BUS4US_SIGN                         = 143
+    BUS4US_SIGN                         = 143,
+    YANDEX_DISTANCE_MATRIX_KEY          = 144,
+    GOOGLE_DISTANCE_MATRIX_KEY          = 145
   };
 
   typedef struct {

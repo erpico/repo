@@ -148,6 +148,14 @@ public:
     void SetServiceBlocked(Json::Value &root, Json::Value &result);
     /* Получение реквизитов перевозчика */
     void GetServiceDetails(Json::Value &root, Json::Value &result);
+    /* Получение расстояния */
+    void GetDistance(Json::Value &root, Json::Value &result);
+    /* Сохранение отзыва по заказу */
+    void SaveOrderReview(Json::Value &root, Json::Value &result);
+    /* Получение отзывов по заказу или за период */
+    void GetReviews(Json::Value &root, Json::Value &result);
+    /* Выставление решение в пользу перевозчика или клиента */
+    void SetReviewDecision(Json::Value &root, Json::Value &result);
 
 private:
     bool m_bInitialized;

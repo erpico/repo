@@ -156,7 +156,7 @@ public:
 
   static std::string GetName(DWORD dwId, int iSQLSearch = 0);
   static std::string GetServiceName(DWORD dwId, int iSQLSearch = 0);
-  static int GetCities(std::list<sCity> & arrCities, const DWORD &_dwId = 0);
+  static int GetCities(std::list<sCity> & arrCities, const DWORD &_dwId = 0, const bool &_bSkip = false);
   static int GetCities(std::list<sCity> &cities, const std::list<long> &ids);
   static int GetCitiesFromOrders(std::list<int> &lstCities);
   static int GetCitiesByWorkChannels(std::list<CCities::sCity> &arrCities, const DWORD& dwWorkChannel);
@@ -173,8 +173,8 @@ public:
   static std::string GetKladrId(const char* strName);
   static std::string GetKladrId(unsigned long dwId);
   
-  static void RefreshCache(const DWORD &_dwId = 0);
-  static void CheckCache(const DWORD &_dwId = 0);
+  static void RefreshCache(const DWORD &_dwId = 0, const bool &_bSkip = false);
+  static void CheckCache(const DWORD &_dwId = 0, const bool &_bSkip = false);
   static void SetCitiesCache(const DWORD &_dwVal);
   static DWORD GetCitiesCache();
 

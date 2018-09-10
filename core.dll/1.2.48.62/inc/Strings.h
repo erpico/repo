@@ -59,7 +59,7 @@ CORE_API void replace(std::string &str, const char* chFrom, const char* chTo, co
 
 CORE_API void tokenize(const std::string &_strSource, const std::string &_strTemplate, std::vector<std::string> &_vectStrings);
 
-CORE_API void tokenize(const std::string &_strSource, const std::string &_strTemplate, std::vector<int> &_vectStrings);
+CORE_API void tokenize(const std::string &_strSource, const std::string &_strTemplate, std::vector<DWORD> &_vectStrings);
 
 CORE_API int CompareNoCase(const std::string &_str1, const std::string &_str2, const std::locale &_loc);
 
