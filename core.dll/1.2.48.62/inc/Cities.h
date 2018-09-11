@@ -126,10 +126,15 @@ public:
       return *this;
     }
 
-    bool operator==(const sCity &another)
+    bool operator == (const sCity &another)
     {
       return (this->dwId == another.dwId);
-    }    
+    }
+
+    bool operator () (const sCity &_sCity) const
+    {
+        return (dwId == _sCity.dwId);
+    }
   };
 
   struct sFields
