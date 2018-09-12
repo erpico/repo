@@ -139,13 +139,13 @@ public:
     /* Отправка логина и пароля водителю по СМС */
     void SendLoginPasswordToDriver(Json::Value &root, Json::Value &result);
     /* Выставление признака "Счет перевозчику" */
-    void CBus4UsServlet::SetServiceBill(Json::Value &root, Json::Value &result);
+    void SetServiceBill(Json::Value &root, Json::Value &result);
     /* Запрос звонка */
-    void CBus4UsServlet::RequestCall(Json::Value &root, Json::Value &result);
+    void RequestCall(Json::Value &root, Json::Value &result);
     /* Запрос маршрута водителя по заказу */
     void GetDriverGPSLog(Json::Value &root, Json::Value &result);
     /* Блокирование подрядчика */
-    void SetServiceBlocked(Json::Value &root, Json::Value &result);
+    void SetServiceState(Json::Value &root, Json::Value &result);
     /* Получение реквизитов перевозчика */
     void GetServiceDetails(Json::Value &root, Json::Value &result);
     /* Получение расстояния */
