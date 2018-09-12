@@ -10,8 +10,16 @@
 
 namespace ServiceDetails
 {
-  static const char* strDetails[] = { "corpName", "corpInn", "corpKpp", "corpAddress",  "corpBik", "corpBankname", "corpCoracc", "corpRacc" };
-}
+  static const char* const_strDetails[] = { "corpName", "corpInn", "corpKpp", "corpAddress",  "corpBik", "corpBankname", "corpCoracc", "corpRacc" };
+};
+
+/* Статусы перевозчиков */
+namespace ServiceStates
+{
+  static const int const_iActive       = 0; /* Активен */
+  static const int const_iVerification = 1; /* На модерации */
+  static const int const_iBlocked      = 2; /* Заблокирован */
+};
 
 class CORE_API CCities {
 public:
@@ -34,7 +42,6 @@ public:
     std::string strPhone;
     std::string strPhoneForSms;
     std::string strServiceId;
-    int         iActive;
     std::string strGeoAddr;
     DWORD       dwOrgForm;
     std::string strEmail;
@@ -47,7 +54,7 @@ public:
     int         iDetails;
     std::string strDirector;
     std::string strAccountant;
-    int         iBlocked;
+    int         iState;
 
     sCity()
     {
@@ -73,7 +80,6 @@ public:
       strPhone                    = "";
       strPhoneForSms              = "";
       strServiceId                = "";
-      iActive                     = 0;
       strGeoAddr                  = "";
       dwOrgForm                   = 0;
       strEmail                    = "";
@@ -86,7 +92,7 @@ public:
       iDetails                    = 0;
       strDirector                 = "";
       strAccountant               = "";
-      iBlocked                    = 0;
+      iState                      = 0;
     }
 
     sCity& operator = (const sCity &another)
@@ -108,7 +114,6 @@ public:
       strPhone                    = another.strPhone;
       strPhoneForSms              = another.strPhoneForSms;
       strServiceId                = another.strServiceId;
-      iActive                     = another.iActive;
       strGeoAddr                  = another.strGeoAddr;
       dwOrgForm                   = another.dwOrgForm;
       strEmail                    = another.strEmail;
@@ -121,7 +126,7 @@ public:
       iDetails                    = another.iDetails;
       strDirector                 = another.strDirector;
       strAccountant               = another.strAccountant;
-      iBlocked                    = another.iBlocked;
+      iState                      = another.iState;
 
       return *this;
     }
@@ -170,7 +175,7 @@ public:
   static bool UpdateServiceCity(const sCity &_stCity);
   static bool DeleteServiceCity(const DWORD &_dwId);
   static bool RestoreServiceCity(const DWORD &_dwId);
-  static bool BlockService(const DWORD &_dwId, const DWORD &_iValue);
+  static bool SetServiceState(const DWORD &_dwId, const int &_iValue);
   static int SelectServiceCity(const DWORD &_dwId, sCity &_stCity, const int &_iDeleted = 0);
   static bool CheckServiceId(const std::string &_strServiceId, const DWORD &_dwId = 0);
 
