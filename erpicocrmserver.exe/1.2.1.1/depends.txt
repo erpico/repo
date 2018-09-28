@@ -14,7 +14,7 @@ api-ms-win-crt-utility-l1-1-0.dll	10.0.14393.795
 acllib.dll	1.2.5.53
 chrome_elf.dll	62.0.3202.94
 core.dll	1.2.60.75
-crmcore.dll	1.2.97.151
+crmcore.dll	1.2.97.152
 erpicocti.dll	1.2.11.67
 guiex.dll	1.0.0.1
 guilib.dll	1.2.10.72
@@ -22,4 +22,4 @@ httplib.dll	1.2.7.62
 libcef.dll	3.3202.1686.0
 libmysql.dll	5.1.41.0
 license.dll	1.1.2.2
-smssenderservlet.dll	1.2.9.105
+smssenderservlet.dll	1.2.9.106
