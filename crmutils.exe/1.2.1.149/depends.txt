@@ -1,0 +1,5 @@
+acllib.dll	1.2.5.69
+core.dll	1.2.70.86
+httplib.dll	1.2.9.78
+libmysql.dll	5.1.41.0
+license.dll	1.1.2.2
