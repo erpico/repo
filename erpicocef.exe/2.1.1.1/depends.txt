@@ -1,0 +1,2 @@
+chrome_elf.dll	74.0.3729.157
+libcef.dll	74.1.19.0
