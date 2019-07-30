@@ -1,0 +1,6 @@
+acllib.dll	2.1.1.2
+core.dll	2.1.1.2
+erpicocti.dll	2.1.1.2
+httplib.dll	2.1.1.2
+libmysql.dll	5.1.41.0
+license.dll	1.1.2.2
