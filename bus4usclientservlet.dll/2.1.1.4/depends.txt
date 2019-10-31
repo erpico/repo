@@ -2,7 +2,7 @@ acllib.dll	2.1.1.4
 chrome_elf.dll	74.0.3729.157
 clientservlet.dll	2.1.1.4
 core.dll	2.1.1.4
-crmcore.dll	2.1.1.4
+crmcore.dll	2.1.1.5
 erpicocti.dll	2.1.1.4
 guiex.dll	2.1.1.1
 guilib.dll	2.1.1.4
