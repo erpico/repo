@@ -1,4 +1,0 @@
-core.dll	1.2.48.61
-httplib.dll	1.2.7.44
-libmysql.dll	5.1.41.0
-license.dll	1.1.2.2

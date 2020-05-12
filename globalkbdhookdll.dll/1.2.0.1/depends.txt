@@ -1,4 +1,0 @@
-api-ms-win-crt-locale-l1-1-0.dll	10.0.10240.16384
-api-ms-win-crt-runtime-l1-1-0.dll	10.0.10240.16384
-api-ms-win-crt-string-l1-1-0.dll	10.0.10240.16384
-api-ms-win-crt-time-l1-1-0.dll	10.0.10240.16384

@@ -1,5 +1,0 @@
-acllibdbg.dll	1.2.1.2
-coredbg.dll	1.2.24.19
-httplibdbg.dll	1.2.3.6
-libmysql.dll	5.1.41.0
-licensedbg.dll	1.1.2.2

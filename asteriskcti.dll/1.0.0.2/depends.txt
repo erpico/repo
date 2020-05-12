@@ -1,4 +1,0 @@
-core.dll	1.0.0.2
-erpicocti.dll	1.0.0.2
-libmysql.dll	N/A
-rscommon.dll	1.0.0.1
