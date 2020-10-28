@@ -1,0 +1,2 @@
+core.dll	2.1.1.9
+libmysql.dll	5.1.41.0
